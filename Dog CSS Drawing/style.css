@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    width: 80vmin;
+    aspect-ratio: 1;
+    position: relative;
+    min-width: 200px;
+}
+.left-half{
+    width: 50%;
+    aspect-ratio: 1.1/1;
+    border-radius: 50%;
+    background-color: #cd3484;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50% );
+    clip-path: polygon(0 0, 50% 0%, 50% 100%, 0 100%);
+    z-index: 22;
+}
+.right-half{
+    width: 18%;
+    aspect-ratio: 1 / 1.8;
+    background-color: #f7617e;
+    top: 27.28%;
+    right: 32%;
+    position: absolute;
+    border-radius: 0 80px 0 0 / 0 80px 0  ;
+    background: ;
+}
+.right-half.top{
+    border-radius:0 100% 0 0 / 0 50%  ;
+}
+
+.right-half.right{
+    rotate: 90deg;
+    top:40%;
+    right: 25%;
+    background:radial-gradient(circle at 0% 0% ,  #cd3484 20%, #0000 0),
+    linear-gradient(to top, #cd348488 56%, #0000 0),
+    #f7617e;
+}
+.eye{
+    position: absolute;
+    width: 7%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 43%;
+    left: 54%;
+    z-index: 22;
+}
+.dog-body{
+    position: absolute;
+    width: 35%;
+    aspect-ratio: 1.5 /0.85;
+    background: radial-gradient(circle at 100% -31% , #85145066 58%, #851450 0 );
+    background-repeat: no-repeat;
+    /* background-color: #851450; */
+    top: 53%;
+    left: 15%;
+    z-index: 25;
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+h2{
+    font-size: (1.5rem, .9rem);
+    margin: 10px 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+h2 a{
+    text-decoration: none;
+    color: violet;
+}
+@media (max-width:400px) {
+    h2{
+        font-size: 1rem;
+    }
+}
