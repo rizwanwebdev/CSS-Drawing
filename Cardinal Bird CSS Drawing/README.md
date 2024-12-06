@@ -1,4 +1,4 @@
-<h2>🎨 Cardinal Bird CSS Drawing</h2>h2>
+<h2>🎨 Cardinal Bird CSS Drawing</h2>
 <br>
 I’m excited to share my latest creative project—a stunning Cardinal Bird crafted entirely using CSS! This artwork demonstrates how CSS can be used not just for web layouts but also for creating visually appealing and detailed designs without any external images.
 <br>
